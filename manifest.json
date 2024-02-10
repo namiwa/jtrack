@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "jTracker",
+  "version": "1.0.0",
+  "description": "a simple research tracking extension",
+  "icons": {
+    "48": "icons/android-chrome-192x192.png",
+    "96": "icons/android-chrome-192x192.png",
+  },
+  "background": {
+    "scripts: "background.js"
+  },
+  "author": {
+    "email": "khairul.nasri895@gmail.com"
+  }
+}
