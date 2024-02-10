@@ -8,8 +8,23 @@
     "96": "icons/android-chrome-192x192.png",
   },
   "background": {
-    "scripts: "background.js"
+    "scripts": ["background.js"]
   },
+  "content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["jTrack.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/android-chrome-192x192.png",
+    "default_title": "See jTrack dialogue!",
+    "default_popup": "popup/selection_popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "bookmarks"
+  ],
   "author": {
     "email": "khairul.nasri895@gmail.com"
   }
