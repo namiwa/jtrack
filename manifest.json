@@ -5,25 +5,28 @@
   "description": "a simple research tracking extension",
   "icons": {
     "48": "icons/android-chrome-192x192.png",
-    "96": "icons/android-chrome-192x192.png",
-  },
-  "background": {
-    "scripts": ["background.js"]
+    "96": "icons/android-chrome-192x192.png"
   },
   "content_scripts": [
     {
-      "matches": ["*"],
-      "js": ["jTrack.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jTrack.js"
+      ]
     }
   ],
-  "browser_action": {
+  "action": {
     "default_icon": "icons/android-chrome-192x192.png",
     "default_title": "See jTrack dialogue!",
     "default_popup": "popup/selection_popup.html"
   },
   "permissions": [
     "tabs",
-    "bookmarks"
+    "bookmarks",
+    "clipboardRead",
+    "clipboardWrite"
   ],
   "author": {
     "email": "khairul.nasri895@gmail.com"
