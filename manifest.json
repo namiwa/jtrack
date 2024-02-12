@@ -4,9 +4,12 @@
   "version": "1.0.0",
   "description": "a simple research tracking extension",
   "icons": {
-    "48": "icons/android-chrome-192x192.png",
-    "96": "icons/android-chrome-192x192.png"
+    "16": "icons/favicon-16x16.png",
+    "32": "icons/favicon-32x32.png",
+    "192": "icons/android-chrome-192x192.png",
+    "512": "icons/android-chrome-512x512.png"
   },
+  // needed for jTrack to run session mode
   "content_scripts": [
     {
       "matches": [
