@@ -29,7 +29,8 @@
     "tabs",
     "bookmarks",
     "clipboardRead",
-    "clipboardWrite"
+    "clipboardWrite",
+    "contextMenus"
   ],
   "author": {
     "email": "khairul.nasri895@gmail.com"
